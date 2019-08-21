@@ -1,0 +1,23 @@
+sudo apt install net-tools
+sudo apt-get update
+sudo apt-get install ansible
+sudo apt-get update
+
+
+sudo apt-get purge openssh-server
+sudo apt-get install openssh-server
+sudo service ssh status
+
+
+
+ifconfig
+sudo vi /etc/hostname
+sudo vi /etc/hosts
+
+sudo apt install yum 
+sudo apt install sshpass
+
+
+ssh-keyscan -H 192.168.99.103 >> /home/ansible/.ssh/known_hosts
+--restart ssh service
+/bin/systemctl reload sshd.service
